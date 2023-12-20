@@ -1,0 +1,15 @@
+<%- include(__dirname + '/views/partials/header.ejs') %>
+
+<div class="container">
+    <div class="row text-center ">
+        <form class="" action="/create" method="post">
+        <div class="col-12" > <h2>título</h2><input class="w-50" name="titulo"  type="text" required></div>
+        <div class="col-12"><h2>subtitulo</h2><input class="w-50" name="subtitulo" type="text" required></div>
+        <div class="col-12" ><h2>post</h2><textarea  class="w-50" style="resize: none; overflow-y: scroll;" rows="5"   maxlength="600"   name="post" type="text" required> </textarea></div>
+        <div class="col-12"><h2>tags</h2><input class="w-50" name="tags" type="text" required></div>
+        <div class="col-12"><button  class="mt-5" type="submit">Enviar</button></div>
+    </form>
+    </div>
+</div>
+
+<%- include(__dirname + '/views/partials/footer.ejs') %>

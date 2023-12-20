@@ -1,0 +1,57 @@
+<%- include(__dirname + '/views/partials/header.ejs') %>
+
+<!-- Header and Plus Button -->
+<div class="container align-self-center text-center " style="height: 20vh;">
+    <div class="row h-100 align-self-center">
+    <div class="col-4"></div>
+    <div class="col-4 align-self-center " style="font-size: 2rem; text-align: center;">
+        <h1 class="">Crie posts Mais Posts!</h1>
+        <a href="/create" class="btn rounded-3 border-2 border-black p-0  " > 
+           <svg   enable-background="new 0 0 0 0" height="5vh" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="6vw" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25" />
+              <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41" />
+            </svg></a>
+    </div>
+    <div class="col-4"></div>
+</div>
+</div>
+
+<!-- Posts -->
+<div class="container " style="min-height: 50vh;">
+    <div class="row mb-5">
+        <% if (locals.postList) {%>
+        <% for (i=0;i<postList.length;i++) { %>
+        <div class="col-6 text-center rounded-3 my-4 " style="border-color: black;  border-radius: 10px; border: solid;"  >
+            <h2 class="py-3" style="font-size: 4rem;"><%= postList[i].titulo %></h2>
+            <h3 class="py-3"  style="font-size: 3rem;"><%= postList[i].subtitulo %></h3>
+            <p class="rounded-3 py-3" style="font-size: 1rem; border-color: black;  border-radius: 10px; border: solid;min-height: 20vh ; "><%= postList[i].post %></p>
+            <p class="py-3"  style=" font-size: 1rem; "><%= postList[i].tags %></p>
+            <p><%= postList[i].data %></p>
+            <form action="/delete" method="post">
+            <button name="delete" value="remove<%= + i%>" class="delete remove<%= + i%> my-3 ">Deletar</button>
+        </form>
+        <form action="/edit" method="post">
+            <button name="edit" value="<%= i %>" class="edit my-3 ">Editar</button>
+        </form>
+        </div>
+   <% }} %>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include(__dirname + '/views/partials/footer.ejs') %>
