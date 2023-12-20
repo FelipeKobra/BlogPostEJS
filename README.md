@@ -8,3 +8,5 @@ Nesse projeto utilizei um array para guardar os objetos que eram os posts e as p
 Tentei usar o mínimo de módulos possível para realizar esse Blog para focar na prática
 
 Se tiver alguma sugestão fique à vontade para me chamar!
+
+https://blogejs-siwb.onrender.com
