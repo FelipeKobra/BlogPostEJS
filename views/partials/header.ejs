@@ -12,18 +12,32 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container-fluid primeiraBg">
-      <div class="row navbar-expand" style="height: 10vh">
-        <div class="col-4 justify-content-center align-content-center"></div>
-        <div class="col-4 justify-content-center text-center align-self-center">
-          <div class="container-fluid">
-            <div class="row"></div>
-          </div>
-        </div>
-        <div class="col-4 justify-content-between text-center align-self-center">
-          <a class="col-6 text-decoration-none px-5" href="/">Home</a>
-          <a class="col-6 text-decoration-none px-5" href="/create">Add Post</a>
+  <body style="background-color: #2222A8;">
+
+    <nav class="navbar navbar-expand-lg primeiraBg rounded-bottom-3 border-4 border-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg class="segundaFiltro" width="8vh" height="8vh" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.97498 12H7.89998" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M11.8 5V8" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M18.625 12H15.7" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M11.8 19V16" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M6.97374 16.95L9.04203 14.8287" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M6.97374 7.05001L9.04203 9.17133" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16.6262 7.05001L14.5579 9.17133" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16.6262 16.95L14.5579 14.8287" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+          </svg></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon segundaFiltro "></span>
+        </button>
+        <div class="collapse navbar-collapse text-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item my-3">
+              <a class="text-decoration-none segunda p-3 " href="/">Home</a>
+            </li>
+            <li class="nav-item my-3">
+              <a class="text-decoration-none segunda p-3 " href="/create">Crie Seu Post!</a>
+            </li>
+            </ul>
         </div>
       </div>
-    </div>
+    </nav>

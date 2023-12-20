@@ -1,15 +1,16 @@
 <%- include(__dirname + '/views/partials/header.ejs') %>
 
 
-<div class="container">
+  
+
+<div class="container mt-5 rounded-5" style="background-color: #19197F;">
     <div class="row text-center ">
         <form class="" action="/editpos" method="post">
-        <input type="hidden" name="index" value="<%= selectedIndex %>">
-        <div class="col-12" > <h2>título</h2><input class="w-50" name="titulo"  type="text"  required></div>
-        <div class="col-12"><h2>subtitulo</h2><input class="w-50" name="subtitulo" type="text"  required></div>
-        <div class="col-12" ><h2>post</h2><textarea  class="w-50" style="resize: none; overflow-y: scroll;" rows="5"   maxlength="600"   name="post" type="text"  required> </textarea></div>
-        <div class="col-12"><h2>tags</h2><input class="w-50" name="tags" type="text" required></div>
-        <div class="col-12"><button  class="mt-5" type="submit">Enviar</button></div>
+        <input type="hidden" name="index" value="<%= index %>">
+        <div class="col-12" > <h2 class="py-3" style="color: #f64c72;">Título</h2><input maxlength="22" class="w-50 rounded-3" name="titulo" value="<%= titulo %>" type="text" required></div>
+        <div class="col-12"><h2 class="py-3" style="color: #f64c72;">Subtitulo</h2><input maxlength="40" class="w-50 rounded-3" name="subtitulo" value="<%= subtitulo %>" type="text" required></div>
+        <div class="col-12" ><h2 class="py-3" style="color: #f64c72;">Texto</h2><textarea class="rounded-3"  id="postarea" style=" resize: none; overflow-y: auto;" rows="5" cols="85"  maxlength="600" name="post" required><%= post %> </textarea></div>
+        <div class="col-12"><button  class="my-5 btn btn-light" type="submit">Enviar</button></div>
     </form>
     </div>
 </div>
