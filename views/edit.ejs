@@ -9,7 +9,7 @@
         <input type="hidden" name="index" value="<%= index %>">
         <div class="col-12" > <h2 class="py-3" style="color: #f64c72;">Título</h2><input maxlength="22" class="w-50 rounded-3" name="titulo" value="<%= titulo %>" type="text" required></div>
         <div class="col-12"><h2 class="py-3" style="color: #f64c72;">Subtitulo</h2><input maxlength="40" class="w-50 rounded-3" name="subtitulo" value="<%= subtitulo %>" type="text" required></div>
-        <div class="col-12" ><h2 class="py-3" style="color: #f64c72;">Texto</h2><textarea class="rounded-3"  id="postarea" style=" resize: none; overflow-y: auto;" rows="5" cols="85"  maxlength="600" name="post" required><%= post %> </textarea></div>
+        <div class="col-12" ><h2 class="py-3" style="color: #f64c72;">Texto</h2><textarea class="rounded-3"  id="postarea" style=" resize: none; overflow-y: auto; max-width: 90%;" rows="5" cols="85"  maxlength="600" name="post" required><%= post %> </textarea></div>
         <div class="col-12"><button  class="my-5 btn btn-light" type="submit">Enviar</button></div>
     </form>
     </div>
